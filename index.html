@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware Hub - Computer Parts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#CPU">CPU</a></li>
+                <li><a href="#GPU">GPU</a></li>
+                <li><a href="#RAM">RAM</a></li>
+                <li><a href="#STORAGE">Storage</a></li>
+                <li><a href="#MOTHERBOARD">Motherboard</a></li>
+                <li><a href="#POWER">Power & Cooling</a></li>
+                <li><a href="#QUIZ">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>How Computers Work And The Different Parts Work Execution</h1>
+            <p>Explore the architecture, components, and mechanics powering modern computing machines.</p>
+        </section>
+
+        <section class="grid-menu">
+            <div class="card">
+                <h3>Central Processing Unit (CPU)</h3>
+                <p>The core brain executing software instructions and logic commands.</p>
+                <a href="cpu.html" class="btn">Learn CPU</a>
+            
+                <h3>Graphics Processing Unit (GPU)</h3>
+                <p>Handles visual rendering, 3D architecture, and parallel computing math.</p>
+                <a href="gpu.html" class="btn">Learn GPU</a>
+        
+                <h3>Random Access Memory (RAM)</h3>
+                <p>Ultra-fast temporary memory workspace for active applications.</p>
+                <a href="ram.html" class="btn">Learn RAM</a>
+            
+                <h3>Storage Devices</h3>
+                <p>Permanent file tracking via Solid State Drives and Hard Disk Drives.</p>
+                <a href="storage.html" class="btn">Learn Storage</a>
+            
+                <h3>The Motherboard</h3>
+                <p>The central nerve system connecting all hardware channels together.</p>
+                <a href="motherboard.html" class="btn">Learn Motherboard</a>
+
+                <h3>Power & Cooling</h3>
+                <p>Regulating electric currents and managing structural thermodynamic safety.</p>
+                <a href="power-cooling.html" class="btn">Learn Power</a>
+            </div>
+        </section>
+    </main>
+
+    <footer><p>&copy; 2026 EugeneHardwareHub Architecture Guide</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CPU - Central Processing Unit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html" class="active" id="CPU">CPU</a></li>
+            <li><a href="gpu.html">GPU</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a href="motherboard.html">Motherboard</a></li>
+            <li><a href="power-cooling.html">Power</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main class="content-layout">
+        <section class="info-section">
+            <h2>The Central Processing Unit (CPU)</h2>
+            <p>The CPU handles mathematical arithmetic, logistical checks, and system data execution routines. It serves as the primary system administrator for running tasks.</p>
+            <h3>The Instruction Cycle</h3>
+            <p>Every operation processes in three distinct structural cycles:</p>
+            <ul>
+                <li><strong>Fetch:</strong> Pulls instructions from memory pools.</li>
+                <li><strong>Decode:</strong> Translates bits into operations.</li>
+                <li><strong>Execute:</strong> Runs operational tasks via circuitry.</li>
+            </ul>
+            <button class="btn" onclick="simulateCpu()">Simulate Clock Cycle</button>
+            <p id="cpu-output" style="margin-top:1rem; font-family:monospace; color:#38bdf8;"></p>
+        </section>
+        <aside class="spec-sidebar">
+            <h3>Key Metrics</h3>
+            <ul class="spec-list">
+                <li>Clock Speed <span>GHz</span></li>
+                <li>Cores <span>Physical Units</span></li>
+                <li>Cache <span>L1 / L2 / L3</span></li>
+                <li>TDP <span>Watts</span></li>
+            </ul>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPU - Graphics Processing Unit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="gpu.html" class="active" id="GPU">GPU</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a href="motherboard.html">Motherboard</a></li>
+            <li><a href="power-cooling.html">Power</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main class="content-layout">
+        <section class="info-section">
+            <h2>Graphics Processing Unit (GPU)</h2>
+            <p>Unlike CPUs which rely on few high-power cores, GPUs use thousands of smaller cores engineered for parallel execution tasks. This format excels at processing pixels, mathematical geometry, and machine learning models simultaneously.</p>
+            <h3>Ray Tracing & VRAM</h3>
+            <p>Modern cards feature discrete Video RAM (VRAM) pipelines acting as local memory layouts for textures, maps, and geometric buffers required for instantly drawing frames.</p>
+        </section>
+        <aside class="spec-sidebar">
+            <h3>GPU Features</h3>
+            <ul class="spec-list">
+                <li>VRAM <span>GDDR6 / HBM</span></li>
+                <li>Bus Width <span>Bits</span></li>
+                <li>Shaders <span>Core Count</span></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RAM - Memory Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="gpu.html">GPU</a></li>
+            <li><a href="ram.html" class="active" id="RAM">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a href="motherboard.html">Motherboard</a></li>
+            <li><a href="power-cooling.html">Power</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main class="content-layout">
+        <section class="info-section">
+            <h2>Random Access Memory (RAM)</h2>
+            <p>RAM acts as the computer's short-term canvas workspace. Whenever files are opened, they move from slow local drives into ultra-fast volatile dynamic RAM modules to remain available for immediate processing.</p>
+            <h3>Volatile Nature</h3>
+            <p>RAM requires electrical current configurations to hold internal data bits. Turning system power off resets memory charges, instantly erasing stored working runtimes.</p>
+        </section>
+        <aside class="spec-sidebar">
+            <h3>RAM Specs</h3>
+            <ul class="spec-list">
+                <li>Generation <span>DDR4 / DDR5</span></li>
+                <li>Frequency <span>MT/s</span></li>
+                <li>Latency <span>CL Timings</span></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Storage - SSD & HDD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="gpu.html">GPU</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html" class="active" id="STORAGE">Storage</a></li>
+            <li><a href="motherboard.html">Motherboard</a></li>
+            <li><a href="power-cooling.html">Power</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main class="content-layout">
+        <section class="info-section">
+            <h2>Storage Technologies</h2>
+            <p>Storage components preserve long-term configuration files, structural operating system codes, and personal user documents safely without requiring active utility power.</p>
+            <h3>SSD vs HDD Architecture</h3>
+            <ul>
+                <li><strong>Solid State Drives (SSD):</strong> Utilize non-volatile NAND flash memory chips. Zero moving components ensure extreme speeds.</li>
+                <li><strong>Hard Disk Drives (HDD):</strong> Employ spinning mechanical magnetic platters read by physical internal needles. High storage capacity at a lower price point.</li>
+            </ul>
+        </section>
+        <aside class="spec-sidebar">
+            <h3>Bus Protocols</h3>
+            <ul class="spec-list">
+                <li>NVMe <span>PCIe Bus</span></li>
+                <li>SATA <span>Legacy Cables</span></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Motherboard - Main Circuit Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="gpu.html">GPU</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a href="motherboard.html" class="active" id="MOTHERBOARD">Motherboard</a></li>
+            <li><a href="power-cooling.html">Power</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main class="content-layout">
+        <section class="info-section">
+            <h2>The Motherboard</h2>
+            <p>The motherboard provides complex trace wiring pathways to interconnect all separate electrical hardware units together.</p>
+            <h3>Key System Hubs</h3>
+            <p>It contains essential slots like PCIe slots for expansion cards, DIMM slots for memory modules, and the main CPU socket.</p>
+        </section>
+        <aside class="spec-sidebar">
+            <h3>Form Factors</h3>
+            <ul class="spec-list">
+                <li>ATX <span>Standard Size</span></li>
+                <li>Micro-ATX <span>Medium Size</span></li>
+                <li>Mini-ITX <span>Compact Size</span></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Power & Cooling Systems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="gpu.html">GPU</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a href="motherboard.html">Motherboard</a></li>
+            <li><a href="power-cooling.html" class="active" id="POWER">Power</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main class="content-layout">
+        <section class="info-section">
+            <h2>Power Supply (PSU) & Thermal Cooling</h2>
+            <p>High-performance processing creates considerable heat. Without adequate engineering safeguards, components can throttle performance or suffer heat damage.</p>
+            <h3>Power Conversion</h3>
+            <p>The Power Supply Unit (PSU) converts hazardous AC wall current into manageable direct DC currents distributed through complex structural cables.</p>
+        </section>
+        <aside class="spec-sidebar">
+            <h3>Cooling Formats</h3>
+            <ul class="spec-list">
+                <li>Air Cooling <span>Heatsinks & Fans</span></li>
+                <li>Liquid Cooling <span>Radiators & Pumps</span></li>
+            </ul>
+        </aside>
+    </main>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware Knowledge Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">EugeneHardwareHub</div>
+        <nav><ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="gpu.html">GPU</a></li>
+            <li><a href="ram.html">RAM</a></li>
+            <li><a href="storage.html">Storage</a></li>
+            <li><a href="motherboard.html">Motherboard</a></li>
+            <li><a href="power-cooling.html">Power</a></li>
+            <li><a href="quiz.html" class="active" id="QUIZ">Quiz</a></li>
+        </ul></nav>
+    </header>
+    <main>
+        <h2 style="text-align:center; margin-bottom:2rem;">Test Your Component Knowledge</h2>
+        <div class="quiz-container" id="quiz-box">
+            <!-- JavaScript dynamically injects current question nodes here -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+   <footer><p>&copy; 2026 EugeneHardwareHub Architecture Guide</p></footer>
+    <script src="script.js"></script>
