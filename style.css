@@ -33,6 +33,14 @@ header {
     border-bottom: 1px solid #334155;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+}
+
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -213,10 +221,128 @@ footer {
 }
 
 @media (max-width: 768px) {
+    header {
+        padding: 1rem 1.5rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    /* Hamburger Icon */
+    .nav-toggle-label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 101;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        display: block;
+        background: var(--accent);
+        height: 3px;
+        width: 25px;
+        border-radius: 2px;
+        position: relative;
+        transition: all 0.3s;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: "";
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before { bottom: 8px; }
+    .nav-toggle-label span::after { top: 8px; }
+
+    /* Transform to X when checked */
+    .nav-toggle:checked + .nav-toggle-label span { background: transparent; }
+    .nav-toggle:checked + .nav-toggle-label span::before { transform: rotate(45deg); top: 0; }
+    .nav-toggle:checked + .nav-toggle-label span::after { transform: rotate(-45deg); top: 0; }
+
+    /* Dropdown Menu */
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: white;
+        border-bottom: 2px solid var(--accent);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s ease-out;
+    }
+
+    .nav-toggle:checked ~ nav {
+        max-height: 500px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 1.5rem 0;
+        gap: 0;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem;
+        font-size: 1.1rem;
+        border-bottom: 1px solid #f1f5f9;
+    }
+
+    nav a:hover, nav a.active {
+        background-color: #f8fafc;
+    }
+
+    .hero {
+        padding: 2.5rem 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .grid-menu {
+        gap: 1.5rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
     .content-layout {
         grid-template-columns: 1fr;
     }
-    nav ul {
-        display: none; /* Simplification for code brevity */
+
+    .info-section {
+        padding: 1.5rem;
+    }
+
+    .spec-sidebar {
+        margin-top: 1rem;
+    }
+
+    main {
+        margin: 1rem auto;
+        padding: 0 1rem;
+    }
+
+    footer {
+        padding: 1.5rem;
+        margin-top: 2rem;
     }
 }
